@@ -1,0 +1,87 @@
+.preview-card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    width: 920px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.preview-card-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 46px 49px;
+}
+
+.preview-card-column-icon {
+    width: 70px;
+    margin-bottom: 35px;
+}
+
+.preview-card-column-title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 39px;
+    margin-bottom: 26px;
+}
+
+.preview-card-column-description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+/* Preview card column bg colors */
+
+#preview-card-sedans-column {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#preview-card-suvs-column {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#preview-card-luxury-column {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Preview card column button style  */
+
+.preview-card-column-button {
+    border-radius: 50px;
+    width: 145px;
+    height: 48px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 83px;
+}
+
+#preview-card-sedans-column-button-text {
+    color: hsl(31, 77%, 52%);
+}
+
+#preview-card-suvs-column-button-text {
+    color: hsl(184, 100%, 22%);
+}
+
+#preview-card-luxury-column-button-text {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 375px) {
+
+    .preview-card-container {
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        overflow: visible;
+    }
+}

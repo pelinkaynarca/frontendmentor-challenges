@@ -1,0 +1,153 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+.bg-img {
+    height: 50%;
+    width: 100%;
+}
+
+.order-summary-card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 450px;
+    height: 700px;
+    border-radius: 18px;
+}
+
+.order-summary-card-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.order-summary-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-summary-card-title {
+    font-weight: 900;
+    font-size: 28px;
+    color: hsl(223, 47%, 23%);
+    margin: 8% 0 15px 0;
+}
+
+.order-summary-card-description {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 27px;
+    margin: 0 12% 18px;
+    text-align: center;
+}
+
+.order-summary-card-plan-section {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    width: 85%;
+    height: 100px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.music-icon {
+    padding: 0 20px;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan-type {
+    font-weight: 900;
+    font-size: 17px;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-price {
+    color: hsl(224, 23%, 55%);
+    font-size:17px;
+}
+
+.plan-change {
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    padding-left: 30%;
+}
+
+.proceed-to-payment-button {
+    display: flex;
+    width: 85%;
+    height: 50px;
+    margin-bottom: 6%;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    box-shadow: hsl(245, 75%, 52%, 20%) 0 15px 25px 5px;
+}
+
+.proceed-to-payment-button:hover {
+    background-color: hsl(245, 75%, 52%, 70%);
+}
+
+.plan-change:hover {
+    color: hsl(245, 75%, 52%, 70%);
+    text-decoration: none;
+}
+
+.cancel-order {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/* Media query */
+
+@media screen and (max-width: 375px) {
+    
+    .order-summary-card-container {
+        width: 325px;
+        height: 560px;
+    }
+
+    .order-summary-card-title {
+        font-size: 22px;
+    }
+
+    .order-summary-card-description {
+        font-size: 15px;
+    }
+
+    .order-summary-card-plan-section {
+        height: 80px;
+    }
+
+    .plan-type, .plan-price {
+        font-size: 14px;
+    }
+
+    .plan-change {
+        font-size: 13px;
+        padding-left: 45px;
+    }
+    
+
+}

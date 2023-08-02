@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results summary component</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container">
+      <div class="result-card">
+       <span class="result-title">Your Result</span>
+       <div class="result-score-circle">
+        <div class="result-score-container">
+         <span class="result-score">76</span>
+         <br/>
+         <span class="result-out-of">of 100</span>
+        </div>
+       </div>
+      <div class="result-comment-container">
+        <span class="result-comment">Great</span>
+        <span class="result-score-comparison">You scored higher than 65% of the people who have taken these tests.</span>
+      </div>
+     </div>
+       <div class="summary-card">
+        <span class="summary-title">Summary</span>
+        <div class="summary-category-container">
+          <div class="summary-box" id="summary-reaction-box">
+            <div class="summary-box-icon-and-text">
+            <img src="./assets/icon-reaction.svg" alt="Icon" class="icon-reaction">
+            <span class="summary-box-text" id="summary-reaction-text">Reaction</span>
+            </div>
+            <div class="summary-score-result">
+              <span class="summary-score">80</span>
+              <span class="summary-score-out-of">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-box" id="summary-memory-box">
+            <div class="summary-box-icon-and-text">
+            <img src="./assets/icon-memory.svg" alt="Icon" class="icon-memory">
+            <span class="summary-box-text" id="summary-memory-text">Memory</span>
+            </div>
+            <div class="summary-score-result">
+              <span class="summary-score">92</span>
+              <span class="summary-score-out-of">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-box" id="summary-verbal-box">
+            <div class="summary-box-icon-and-text">
+              <img src="./assets/icon-verbal.svg" alt="Icon" class="icon-reaction">
+              <span class="summary-box-text" id="summary-verbal-text">Verbal</span>
+            </div>
+            <div class="summary-score-result">
+              <span class="summary-score">61</span>
+              <span class="summary-score-out-of">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-box" id="summary-visual-box">
+            <div class="summary-box-icon-and-text">
+              <img src="./assets/icon-visual.svg" alt="Icon" class="icon-visual">
+              <span class="summary-box-text" id="summary-visual-text">Visual</span>
+            </div>
+            <div class="summary-score-result">
+              <span class="summary-score">72</span>
+              <span class="summary-score-out-of">/ 100</span>
+            </div>
+          </div>
+          <a href="" class="button">Continue</a>
+        </div>
+       </div>
+    </div>
+</body>
+</html> 

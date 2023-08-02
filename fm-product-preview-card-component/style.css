@@ -1,0 +1,136 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card-container {
+    position: absolute;
+    display: grid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.card-product-img {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.product-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+/* card style for product details on the right */
+
+.card-product-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 240px;
+    gap: 23px;
+    padding: 32px 200px 20px 330px;
+}
+
+.card-product-category {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.card-product-name {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 31px;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 23.7px;
+}
+
+.card-product-price-section {
+    display: flex;
+    align-items: center;
+}
+
+.card-product-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+}
+
+.card-product-price-before-discount {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+/* style for add-to-cart-button */
+
+.card-add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 48px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+}
+
+.add-to-cart-button {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .card-container {
+        height: 610px;
+        width: 350px;
+        display: flex;
+    }
+
+    .card-product-img {
+        height: 40%;
+        width: 100%;
+    }
+
+    .product-img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-product-details {
+        width: 295px;
+        padding: initial;
+        margin: 265px 0 0 20px;
+        gap: 15px;
+    }
+
+    .card-product-price-section {
+        padding-top: 5px;
+    }
+
+    .card-add-to-cart {
+        width: 310px;
+    }
+
+}
+

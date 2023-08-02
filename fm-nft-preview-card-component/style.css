@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.nft-card-container {
+    position: absolute;
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 5px 20px hsl(214, 58%, 9%);
+}
+
+.nft-card-image {
+    position: relative;
+    margin: 25px;
+}
+
+.nft-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.nft-card-image-hover {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-304px);
+    opacity: 0;
+}
+
+.nft-card-image-hover:hover {
+     opacity: 1;
+     cursor: pointer;
+}
+
+.nft-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 25px 25px;
+}
+
+.nft-card-title {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nft-card-description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.nft-price-and-time-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px 15px;
+}
+
+.nft-price-and-icon, .nft-time-left-and-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nft-price {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-time-left {
+    color: hsl(215, 51%, 70%);
+}
+
+.nft-card-bottom-line {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin: 10px 25px;
+}
+
+.nft-creator-img-and-name {
+    display: flex;
+    margin: 5px 25px;
+    align-items: center;
+}
+
+.nft-creator-img {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.nft-creator-text {
+    margin: 15px;
+}
+
+.nft-creator {
+    color: hsl(215, 51%, 70%);
+}
+
+.nft-creator-name {
+    color: white;
+    text-decoration: none;
+}
+
+.nft-card-title:hover, .nft-creator-name:hover {
+    color: hsl(178, 100%, 50%);
+}
